@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type = "text/css"> 
+	.box p{color:lime;}				/*하위 선택자*/ /*box라는 클래스 안의 p태그에 적용*/
+	.box > p {color:orange;}			/*자식 선택자*/ /*box라는 클래스의 바로 밑에 태그들에 적용*/
+	.box + div{background: gray;}		/*인접 선택자*/ /*box라는 클래스의 바로 다음 div태그에 적용*/
+	.box02 ~ p {background: green;}	/*형제 선택자*/ /*box와 같은 라인에 존재하는 p태그에 적용*/
+												 /*다음것부터 적용이 됨*/
+</style>
+</head>
+<body>
+
+<div class = "box">
+	<p>1.하위 선택자는 특정 선택자 하위의 모든 요소를 말한다</p>
+	<div class="box02">
+		<p>2.자식 선택자는 직속 자식 요소를 말한다.</p>
+	</div>
+	<p>3.다음 내용</p>
+</div>
+
+<div>1.인접 선택자는 바로 뒤에 나오는 하나의 요소</div>
+<div>2.인접 선택자는 바로 뒤에 나오는 하나의 요소</div>
+<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+</body>
+</html>

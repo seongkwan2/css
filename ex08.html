@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	img{width: 100px; height: 100px;}
+	.h02{display: none;}				/*display: none; 숨김기능*/
+	.h01:hover{display: none;}
+	.h01:hover + .h02 {display: block;}	/*display: block; 보여주기 기능*/
+	/*.h01에 마우스를 올리면 바로 다음의 .h02클래스에 숨김기능이 보여주기 기능으로 바뀜*/
+	
+	div{text-align: center;}
+</style>
+
+</head>
+<body>
+
+	<h1>Hover Effect</h1>
+	<div class="h01"><img src="img.jpg"></div>
+	<div class="h02">
+		<button>기사</button>
+		<button>구독</button>
+	</div>
+</body>
+</html>
+

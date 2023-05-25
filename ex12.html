@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.in-block{
+		background: orange;
+		height: 50px; width: 200px;
+		display: inline-block; /*block에 width를 주는 효과*/
+		line-height: 50px; text-align: center;	/*line-height를 이용한 가운데 정렬*/
+	}
+	label{
+		height: 100px; background: red;/*inline-block으로 블록화 시켜서 height를 동작시키게함*/
+		/*
+		line-block의 버티컬은 다음 들어오는 요소의 위치를 변경한다.
+		table-cell의 버티컬과는 다르게 동작한다.
+		*/
+		display: inline-block;			
+		vertical-align: middle;
+		line-height: 50px;
+	}
+	div{
+		background: aqua;
+		width: 300px; height: 300px;
+		display: table-cell;
+		vertical-align: middle;		/*vertical-align를 이용한 가운데 정렬 (여러개의 문장)*/
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<a href="#" class="in-block">홈으로 이동</a>
+	<div>
+		여러줄<br>가운데<br>정렬<br>되나요?
+	</div>
+	<label>아이디 입력</label><input>
+
+</body>
+</html>

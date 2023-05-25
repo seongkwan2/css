@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.nav{background: black;}
+	.nav > ul {list-style: none; display: flex;
+				justify-content: center;}
+				/*list-style: none; 특수문자가 사라짐*/
+				/*display: flex; 가로로 배치*/
+				/*justify-content: flex-end; 오른쪽 끝에 배치*/
+	.nav > ul li {margin : 0 3px; padding: 10px 10px;}	
+									/*margin: 첫번째숫자 = 위, 아래*/
+									/*공백 생성  두번째숫자 = 좌, 우*/
+									/*padding:내용을 압축해서 크기증가 */
+	.nav > ul li a{text-decoration: none; color:white;}						
+	.nav > ul li a:hover{color:orange;
+						 border-bottom: 1px dotted orange;
+						 transition : all 0.25s;}
+						 /*border: 선의 두깨*/
+						 /*border-bottom: 아래쪽에만 선 생성*/
+						 /*solid,dotted = 선의모양(골라서 사용)*/
+						
+</style>
+</head>
+<body>
+	<nav class="nav">
+		<ul>
+			<li> <a href="#">HOME</a> </li>
+			<li> <a href="#">BOARD</a> </li>
+			<li> <a href="#">MEMBER_SHIP</a> </li>
+		</ul>
+	</nav>
+	flex-start : 왼쪽 끝 정렬<br>flex-end : 오른쪽 끝 정렬<br>
+	center : 가운데 정렬<br> space-between : 양쪽 끝 정렬<br>
+	space-around : 요소 좌우 동일 간격으로 정렬<br>
+</body>
+</html>

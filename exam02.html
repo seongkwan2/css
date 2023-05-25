@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#box{background: pink; width: 500px; height: 400;
+		padding: 10px 10px;}
+	.in-block{
+		background: RGBA(255,0,0,.9);
+		height: 80px; width: 200px;
+		color: white;
+		
+		display: inline-block; 					/*a태그는 인라인이므로 블록화를 시켜줌*/
+		line-height: 80px; text-align: center;	/*블록화 세부설정*/
+		text-decoration: none;					/*밑줄제거*/
+												/*div로 만들면 밑줄이 처음부터 없음*/
+	}
+	.box2 > a:hover{
+	background: gray;
+	transition : all 0.1s linear 0.1s}			/*애니메이션 동작시간 (생략가능)*/
+
+</style>
+</head>
+<body>
+<div id = "box">
+	<div class = "box2">
+	<a href="#" class="in-block">Home</a><br>
+	<a href="#" class="in-block">Profile</a><br>
+	<a href="#" class="in-block">Board</a><br>
+	<a href="#" class="in-block">Contact</a><br>
+	</div>
+	
+
+</div>
+</body>
+</html>
