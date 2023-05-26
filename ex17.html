@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">			/*position : static = 기본값*/
+								/*position : relative = 흐름대로 따라감*/
+								/*position : absolute 는 body기준으로 절대적인 위치*/
+	.span1{background: yellow; position: static; top: 5px;}
+	.span2{background: red; position: relative; bottom : 10px;}
+	.span3{background: silver; position: absolute; top:-5px;}
+
+</style>
+</head>
+<body>
+	<div style = "background: green";>position</div>
+	
+	<span class="span1">span1</span>
+	<span class="span2">span2</span>
+	<span class="span3">span3</span>
+	
+	<div style="background: green">
+	기본 값은 static입니다.
+	</div>
+</body>
+</html>

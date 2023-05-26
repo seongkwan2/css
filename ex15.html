@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">	
+	#wrap{width: 50%; height:200px;
+		border: 4px solid black; margin:auto;	/*margin:auto; 박스를 중앙으로 위치*/
+		text-align: center;
+		}
+	#container {display: flex;}	/*display: flex 블럭을 가로로 이어서 붙여줌*/
+	#container div{width: 33.333333%; border: 1px solid black}
+	#container div:first-child {background: red;}	/*각각 색상을 설정할수 있다.*/
+	#container div:nth-child(2) {background: green;}
+	#container div:nth-child(3) {background: aqua;}
+</style>
+</head>
+<body>
+	<div id = "wrap">
+		<header style="background: gray;">
+			제목이 들어옵니다
+		</header>
+		<div id="container">
+		<div> <h1>1</h1> </div>
+		<div> <h1>2</h1> </div>
+		<div> <h1>3</h1> </div>
+		</div>
+		<footer style="background: maroon;">바닥글</footer>
+	</div>
+</body>
+</html>
+
+

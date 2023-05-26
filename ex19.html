@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.wrapper{
+		position: relative; top: 200px;
+		background: gray;
+		height: 400px; width: 400px;
+	}
+	
+	/*
+	item이 wrapper에 종속되어있어서
+	wrapper안에서 작동한다.
+	*/
+	.item{
+		position: absolute;
+		background: lime;
+		top : 150px; left:150px;
+		height: 100px; width: 100px;
+	}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="item">정 중앙 위치</div>
+	</div>
+
+</body>
+</html>

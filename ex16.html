@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type = "text/css">
+	#wrap{display: flex; width: 90%; height: 200px;
+		  margin: auto; border: 4px solid black;
+		  text-align: center;
+		 }
+	#wrap div{width: 33.33%;}
+	.cl_01 {order:3; background: red;} /*order:1 오더를 사용해서 위치지정 가능*/
+	.cl_02 {order:2; display:flex; flex-flow: column; background: green;}
+	.cl_03 {order:1; background: aqua;}	/*flex-flow: column,row 둘중하나 선택사용*/
+	
+	.h01{order:2; background: fuchsia;}
+	.h02{order:1; background: lime;}
+		 
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="cl_01">	<h1>1</h1> </div>
+		<div class="cl_02">
+			<h1 class="h01">h01</h1>
+			<h1 class="h02">h02</h1>
+		</div>
+		<div class="cl_03"> <h1>3</h1> </div>
+	</div>
+
+</body>
+</html>
+

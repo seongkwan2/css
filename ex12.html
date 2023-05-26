@@ -9,9 +9,10 @@
 		height: 50px; width: 200px;
 		display: inline-block; /*block에 width를 주는 효과*/
 		line-height: 50px; text-align: center;	/*line-height를 이용한 가운데 정렬*/
-	}
+												/*inline-block으로 블록화 시켜서 height를 동작시키게함*/
+		}
 	label{
-		height: 100px; background: red;/*inline-block으로 블록화 시켜서 height를 동작시키게함*/
+		height: 100px; background: red;
 		/*
 		line-block의 버티컬은 다음 들어오는 요소의 위치를 변경한다.
 		table-cell의 버티컬과는 다르게 동작한다.
@@ -19,14 +20,15 @@
 		display: inline-block;			
 		vertical-align: middle;
 		line-height: 50px;
-	}
+		}
+		
 	div{
 		background: aqua;
 		width: 300px; height: 300px;
-		display: table-cell;
-		vertical-align: middle;		/*vertical-align를 이용한 가운데 정렬 (여러개의 문장)*/
-		text-align: center;
-	}
+		display: table-cell;		/*세로로 정렬한다고 선언*/
+		vertical-align: middle;		/*vertical-align를 이용한 세로의 가운데로 정렬 (여러개의 문장)*/
+		text-align: center;			/*글자 가운데 정렬*/
+		}
 </style>
 </head>
 <body>

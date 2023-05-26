@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type ="text/css">
+	div{height:200px; width: 200px; margin: auto;}
+	.id{width:200px; height:20px; font-size:20px;
+		border: none; border-bottom: 2px solid darkgray;
+		padding: 5px 0; margin: 10px 0;}
+	.id:focus{outline:none;}		/*눌렀을때 나오는 테두리를 없앰*/
+	.id::-webkit-input-placeholder{	/*letter-spacing 글자들의 간격*/
+		text-align: center; letter-spacing: 5px;}
+	
+		/*border-radius 모서리가 둥근모형*/
+	.pwd{border-radius: 5px; height: 20px;}
+	.btn{border-radius: 5px; width: 200px; height: 30px;
+					background: olive;}
+</style>
+</head>
+
+<body>
+	<div>
+		<h3 style="text-align: center; 
+			border-bottom: 1px solid; ">
+			로그인 페이지
+		</h3>
+<form action="">
+	<input type="text" class="id" placeholder="input id"><br>
+	<input type="text" class="pwd" placeholder="input password"><br>
+	<input type="submit" class="btn" value="LOGIN"><br>
+</form>
+	</div>
+
+</body>
+</html>

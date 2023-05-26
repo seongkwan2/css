@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#div{border: 3px solid black; 
+		width: 500px; height: 400px;
+		margin: auto; display: flex; flex-flow: column;}
+		
+	.header{background: red; border:none; border-bottom:6px solid black;
+			height: 25%;
+			display: flex;				/*아래 명령어를 사용하기 위한 flex*/		
+			justify-content: center;	/*수평가운데 정렬*/
+			align-items: center; 		/*수직가운데 정렬*/
+			font-size:35px; font-weight:bold;}
+	
+	.div2{display: flex;  height:60%;}
+	
+	.nav{background: yellow;  width: 15%; text-align: center;
+		 border-right: 6px solid black; padding-top: 15px;
+		 font-size: 20px; font-weight:bold;}
+	
+	.section{background: green;  width: 65%; text-align: center;}
+			 
+	.head2{background: aqua; border: 3px solid black;
+			margin: 25px 10px 10px 10px; height: 35px;
+			display: flex;
+			justify-content : center;
+			align-items: center;}
+	
+	.art2{background: yellow; border: 3px solid black;
+			margin: 15px 10px 10px 10px; height: 35px;
+			display: flex;
+			justify-content : center;
+			align-items: center;}
+	
+	.foo2{background: pink; border: 3px solid black;
+			margin: 15px 10px 10px 10px; height: 35px;
+			display: flex;
+			justify-content : center;
+			align-items: center;}
+			 
+	
+	.aside{background: yellow; width: 25%; text-align: center;
+			font-size: 20px; font-weight:bold; padding-top: 15px;
+			border-left: 6px solid black;}
+	
+	.footer{background: pink; border:none; border-top:6px solid black;
+			height: 20%; font-size: 20px; font-weight:bold;
+			
+			
+			display: flex; 		/*아래 명령어를 사용하기 위한 코드*/
+			justify-content : center; /*수평 가운데*/
+			align-items: center;	  /*수직 가운데*/
+			}
+</style>
+</head>
+<body>
+
+<div id = "div">
+	<header class="header">
+			&lt;header&gt;
+	</header>
+	
+	<div class ="div2">
+		<nav class="nav">
+			nav
+		</nav>
+		
+		<section class="section">
+			<h3>section1</h3>
+			<header class="head2">
+				header
+			</header>
+			
+			<article class="art2">
+				article
+			</article>
+			
+			<footer class="foo2">
+				footer
+			</footer>
+		</section>
+		
+		<aside class = "aside">
+			aside
+		</aside>
+	</div>
+	<footer class="footer">
+		&lt;footer&gt;
+	</footer>
+</div>
+
+</body>
+</html>
